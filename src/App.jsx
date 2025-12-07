@@ -1,12 +1,22 @@
+
+
 const App = () => {
-  const onClickHandler = () => {
-    console.log('clicked');
+  const onClickHandler = (event) => {
+    console.log('clicked', event);
+  }
+  const onChangeHandler = (event) => {
+    console.log('onC hange', event.target.value);
   }
   return (
-    <div >
-      <button onClick={onClickHandler}>Click Me!</button>
+    <form onSubmit={(event)=>{
+      event.preventDefault();
+      console.log('submitted', event);
+
+    }}>
       test
-    </div>
+     <input type={'text'} onChange={onChangeHandler}/>
+      <button type={'submit'} onClick={onClickHandler}>button</button >
+    </form>
   )
 }
 
