@@ -19,7 +19,7 @@ const App = () => {
             test2 = {user.passport}
             test3 = {4332}
             test4 = {'sass'}
-            test5 = {[...user.passport, user.age]}
+            test5 = {[user.passport, user.age]}
             test6 = {[444,'999', [true], {hello: 'world'}]}
             test7 = {false}
             test8 = {() =>{}}

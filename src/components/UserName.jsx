@@ -1,5 +1,5 @@
 const UserName = (props) => {
-  console.log(props.test);
+  console.log(props);
   return (
       <div>
        Gap
