@@ -3,7 +3,7 @@ const UserName = (props) => {
   console.log(props);
   return (
 
-    props.userName >= 20 ? (
+    props.UserAge <= 20 ? (
       <p className='oops'>
         {props.userName}
         <button>Изменить имя</button>
