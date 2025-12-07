@@ -15,16 +15,20 @@ const App = () => {
       {USERS.map((user) => (
         <div key={(user.id)}>
           <UserName
-            test = {user.name}
-            test2 = {user.passport}
-            test3 = {4332}
-            test4 = {'sass'}
-            test5 = {[user.passport, user.age]}
-            test6 = {[444,'999', [true], {hello: 'world'}]}
-            test7 = {false}
-            test8 = {() =>{}}
-            test9 = 'tron'
-            test10
+            userName = {user.name}
+            userSurname = {user.surname}
+            UserAge = {user.age}
+            UserPassport={user.passport}
+
+            // test2 = {user.passport}
+            // test3 = {4332}
+            // test4 = {'sass'}
+            // test5 = {[user.passport, user.age]}
+            // test6 = {[444,'999', [true], {hello: 'world'}]}
+            // test7 = {false}
+            // test8 = {() =>{}}
+            // test9 = 'tron'
+            // test10
           />
 
         </div>
