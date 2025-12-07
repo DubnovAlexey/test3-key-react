@@ -3,7 +3,8 @@ const App = () => {
     console.log('clicked');
   }
   return (
-    <div onClick={onClickHandler}>
+    <div >
+      <button onClick={onClickHandler}>Click Me!</button>
       test
     </div>
   )
