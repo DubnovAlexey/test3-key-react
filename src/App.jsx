@@ -24,6 +24,7 @@ const App = () => {
             test7 = {false}
             test8 = {() =>{}}
             test9 = 'tron'
+            test10
           />
 
         </div>
