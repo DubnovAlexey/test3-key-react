@@ -1,3 +1,6 @@
+import UserName from './components/UserName.jsx';
+
+
 const USERS = [
   {id: 1, name: 'Alex', surname: 'Burn', age: 32, passport: 2902},
   {id: 2, name: 'Alex', surname: 'Turn', age: 44, passport: 2332},
@@ -10,13 +13,19 @@ const App = () => {
   return (
     <div>
       {USERS.map((user) => (
-        <p key={user.id}>{user.name} {user.surname}</p>
-      ))}
+        <div key={(user.id)}>
+          <UserName
+            test = {user.name}
+            test2 = {user.passport}
+            test3 = {4332}
+            test4 = {'sass'}
+            test5 = {[...user.passport, user.age]}
+            test6 = {[444,'999', [true], {hello: 'world'}]}
+            test7 = {false}
+            test8 = {() =>{}}
+            test9 = 'tron'
+          />
 
-
-      {USERS.map((user) => (
-        <div key={user.id}>
-        <p>{user.name} {user.surname}</p>
         </div>
        ))}
     </div>
